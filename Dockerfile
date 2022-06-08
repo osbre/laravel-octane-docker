@@ -46,8 +46,5 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
 # Add local and global vendor bin to PATH.
 ENV PATH ./vendor/bin:/composer/vendor/bin:/root/.composer/vendor/bin:/usr/local/bin:$PATH
 
-# Install PHP_CodeSniffer
-RUN composer global require "squizlabs/php_codesniffer=*"
-
 # Setup working directory
 WORKDIR /var/www
