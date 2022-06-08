@@ -32,7 +32,6 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
     @composer \
     redis-stable \
     imagick-stable \
-    xdebug-stable \
     bcmath \
     calendar \
     exif \
@@ -41,7 +40,7 @@ RUN chmod +x /usr/local/bin/install-php-extensions && \
     pdo_mysql \
     pdo_pgsql \
     pcntl \
-    soap \
+    openswoole \
     zip
 
 # Add local and global vendor bin to PATH.
